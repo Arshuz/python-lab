@@ -1,0 +1,1 @@
+I am currently studing about Python and Git so I am trying to write some Python functions and commit them which helps me to study both Git and Python at the same time.
