@@ -38,3 +38,11 @@ t = 6.624
 
 # get_count("      ***********  ","for 1 *","correct")
 # get_count("* BONJOUR *")
+
+
+# from pyramid import get_pyramid
+
+# get_pyramid(5)
+# get_pyramid(5, "@")
+# get_pyramid(5, "@", "#")
+# get_pyramid(0)
