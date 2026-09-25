@@ -1,3 +1,7 @@
-arshuz.code-workspace
-.vscode/
-__pycache__/
+/arshuz.code-workspace
+/.vscode/
+/__pycache__/
+/testing.py
+/arithmetic_regressor.py
+/manual.py
+/option.py
