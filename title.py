@@ -42,10 +42,10 @@ def get_title(title, center = 0, border = "*"):
     width = shutil.get_terminal_size().columns
     header = f"{border} {clean_title} {border}"
     border_len = len(header)
-    border_str = header * border_len
+    border_str = border * border_len
 
     if center == 0:
-        border = border.center(width)
+        border_str = border_str.center(width)
         header = header.center(width)
 
     print(f"\n{border_str}")

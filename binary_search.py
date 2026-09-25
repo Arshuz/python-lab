@@ -36,7 +36,8 @@ def get_binary_search(low_value, target_no, high_value):
         return None
 
     avg = get_avg(low_value,high_value)
-    # print(f"The  current  avg  is  {avg}")
+    if __name__ == "__main__":
+        print(f"The  current  avg  is  {avg}")
 
     # Handle failure if get_avg returns None or non-numeric error
     if avg is None or not isinstance(avg, (int, float)):
@@ -47,14 +48,16 @@ def get_binary_search(low_value, target_no, high_value):
         return avg
     elif avg < target_no:
         low_value = avg
-        # print(f"Lower bound changes to {avg}")
+        if __name__ == "__main__":
+            print(f"Lower bound changes to {avg}")
     else:
         high_value = avg
-        # print(f"Upper bound changes to {avg}")
-    return 0
+        if __name__ == "__main__":
+            print(f"Upper bound changes to {avg}")
+    return get_binary_search(low_value, target_no, high_value)
 
 if __name__ == "__main__":
     # Example usage
-    result = get_binary_search(1, 5, 10)
+    result = get_binary_search(1, 9, 10)
     if result is not None:
         print(f"Found target: {result}")
