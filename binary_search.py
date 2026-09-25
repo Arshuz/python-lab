@@ -1,4 +1,5 @@
 import math
+import sys
 from average import get_avg
 
 def get_binary_search(low_value, target_no, high_value):
@@ -19,20 +20,41 @@ def get_binary_search(low_value, target_no, high_value):
         target_no  (float)  : The target number to obtained by the help of this algorithm.
         high_value (float)  : The upper-bound of the range
     """
-    if not (low_value <= target_no <= high_value):
-        return "Error: Target number is out of range, please check again"
+    # 1. Type validation to ensure numeric bounds
+    if not all(isinstance(val, (int, float)) for val in (low_value, target_no, high_value)):
+        sys.stderr.write("[ERROR in binary_search.py]: All parameters must be numeric (int or float).\n")
+        return None
 
-    while True:
-        avg = get_avg(low_value,high_value)
-        # print(f"The  current  avg  is  {avg}")
-        
-        if math.isclose(avg, target_no, abs_tol = 1e-9):
-            return avg
-        elif avg < target_no:
-            low_value = avg
-            # print(f"Lower bound changes to {avg}")
-        else:
-            high_value = avg
-            # print(f"Upper bound changes to {avg}")
+    # 2. Logic check: lower bound must be less than or equal to upper bound
+    if low_value > high_value:
+        sys.stderr.write("[ERROR in binary_search.py]: Invalid range (low_value cannot be greater than high_value).\n")
+        return None
+
+    # 3. Target out-of-bounds check
+    if not (low_value <= target_no <= high_value):  
+        sys.stderr.write("[ERROR in binary_search.py]: Target number is out of range.\n")
+        return None
+
+    avg = get_avg(low_value,high_value)
+    # print(f"The  current  avg  is  {avg}")
+
+    # Handle failure if get_avg returns None or non-numeric error
+    if avg is None or not isinstance(avg, (int, float)):
+        sys.stderr.write("[ERROR in binary_search.py]: Calculation aborted due to error in get_avg.\n")
+        return None
+    
+    if math.isclose(avg, target_no, abs_tol = 1e-9):
+        return avg
+    elif avg < target_no:
+        low_value = avg
+        # print(f"Lower bound changes to {avg}")
+    else:
+        high_value = avg
+        # print(f"Upper bound changes to {avg}")
     return 0
-        
+
+if __name__ == "__main__":
+    # Example usage
+    result = get_binary_search(1, 5, 10)
+    if result is not None:
+        print(f"Found target: {result}")
