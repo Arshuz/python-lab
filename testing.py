@@ -8,7 +8,7 @@ t = 6.624
 # print(f"The avg of {a}, {b} and {t} is {get_avg(a,b,t)}")
 
 
-# from interval_halving import get_interval_halving
+# from binary_search import get_binary_search
 
 # print(f"The binary half of {a} and {b} is {get_interval_halving(a,t,b)}")
 

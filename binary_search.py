@@ -1,13 +1,13 @@
 import math
 from average import get_avg
 
-def get_interval_halving(low_value, target_no, high_value):
+def get_binary_search(low_value, target_no, high_value):
     """
     NAME
-        get_interval_halving - Obtains the target number by reducing the search range half each time(Binary Search).
+        get_binary_search - Obtains the target number by reducing the search range half each time(Binary Search).
     
     SYPNOSIS
-        get_interval_halving(low_value, target_no, high_value)
+        get_binary_search(low_value, target_no, high_value)
 
     DESCRIPTION
         Sends an ERROR message if the target_no is OUT of range.
