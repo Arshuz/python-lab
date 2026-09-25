@@ -1,4 +1,4 @@
-arshuz.code-workspace
-.vscode/
-__pycache__/
-testing.py
+/arshuz.code-workspace
+/.vscode/
+/__pycache__/
+/testing.py
