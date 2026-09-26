@@ -1,5 +1,5 @@
 /arshuz.code-workspace
 /.vscode/
 /__pycache__/
-/arithmetic_regressor.py
+/arithmetic_regression.py
 /manual.py
