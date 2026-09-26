@@ -1,6 +1,6 @@
 import math
 import sys
-from average import get_avg
+import average.get_avg
 
 def get_binary_search(low_value, target_no, high_value):
     """
