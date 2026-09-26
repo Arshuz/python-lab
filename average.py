@@ -6,13 +6,13 @@ def get_avg(*num):
         get_avg - Concludes the mathematical average of \"n\" of numbers. 
     
     SYPNOSIS
-        get_avg(num)
+        get_avg(*num)
 
     DESCRIPTION
         Can conclude mathematical average for infinity of numbers.
 
     PARAMETERS
-        *num (float or tuple): The numbers for which to calculate the average.
+        num (float or tuple)  : The numbers for which to calculate the average.
     """
     try:
         if not num:

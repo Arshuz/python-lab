@@ -1,7 +1,24 @@
 import sys
 
 def get_option(question: str, option_count: int, *rest: str):
-    
+    """
+    NAME
+        get_option - Asks question with options and returns the answer.
+
+    SYPNOSIS
+        get_option(question: str, option_count: int, *rest: str)
+
+    DESCRIPTION
+        Asks the question as per the first parameter neatly without leading or trailing whitespaces.
+        Gives finite number of options with answers as per the other parameters.
+        Returns the answer.
+        Can point errors efficiently.
+
+    PARAMETERS
+        question     (str)  : The question for the upcoming options.
+        option_count (int)  : The number of options.
+        rest         (str)  : The option messages for each of the options.
+    """
     if __name__ == "__main__":
         print(f"len of rest is: {len(rest)}\n")
 
