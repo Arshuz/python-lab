@@ -1,6 +1,6 @@
 # needs dynamic width adjustment
 
-import inspection.get_inspect
+from inspection import get_inspect
 import sys
 import shutil
 
