@@ -12,6 +12,7 @@ def get_count(char, comment = None):
         Automatically remove leading and trailing whitespaces.
         Counts the number of characters present in the stripped string.
         Optionally appends a comment to the output.
+        Can point errors efficiently.
 
     PARAMETERS
         char    (str)  : The character string to be counted WITHOUT leading and trailing WHITESPACES.

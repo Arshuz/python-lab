@@ -14,6 +14,7 @@ def get_binary_search(low_value, target_no, high_value):
         Sends an ERROR message if the target_no is OUT of range.
         FINDS the mid-point of the range and CONCLUDES if the target_no is mathematically close by to the mid-point.
         CHANGES the upper-bound or the lower-bound to the mid-point in according to in which range does the target_no LIVE in.
+        Can point errors efficiently.
 
     PARAMETERS
         low_value  (float)  : The lower-bound of a range.

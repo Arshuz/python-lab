@@ -15,11 +15,12 @@ def get_title(title, center = 0, border = "*"):
     DESCRIPTION
         Prints a text title surrounded by custom border characters.
         Can automatically center the output based on terminal width.
+        Can point errors efficiently.
 
     PARAMETERS
         title  (str)    : The text string to display INSIDE the banner.
         center (int)    : State flag (0 to CENTER align, 1 for STANDARD alignment).
-        *rest  (tuple)  : Optional border decoration characters (1 or 2 parameters, more than 2 parameters are IGNORED).
+        rest  (tuple)  : Optional border decoration characters (1 or 2 parameters, more than 2 parameters are IGNORED).
     """
     # 1. Validate that 'title' is a valid string
     if not isinstance(title, str):

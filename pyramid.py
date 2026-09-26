@@ -10,6 +10,7 @@ def get_pyramid(n, symbol = "*"):
 
     DESCRIPTION
         Draws a pyramid of given symbol with the given number of rows.
+        Can point errors efficiently.
 
     PARAMETERS
         n      (int) : The number of rows in the pyramid.

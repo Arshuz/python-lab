@@ -10,6 +10,7 @@ def get_avg(*num):
 
     DESCRIPTION
         Can conclude mathematical average for infinity of numbers.
+        Can point errors efficiently.
 
     PARAMETERS
         num (float or tuple)  : The numbers for which to calculate the average.

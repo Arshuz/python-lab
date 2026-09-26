@@ -13,6 +13,7 @@ def get_inspect(var_name, var):
         Prints the value(or)s of the variable as it contains.
         Prints the data type of the variable in neatly text.
         Prints all these information in one line.
+        Can point errors efficiently.
 
     PARAMETERS
         var_name (str)  : The name of a variable which is to be examined and displayed inside a pair of square brackets \"[] \".
