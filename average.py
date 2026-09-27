@@ -17,7 +17,7 @@ def get_avg(*num):
     """
     try:
         if not num:
-            raise ValueError("No numbers provided for average calculation.")
+            raise ValueError("[ERROR in average.py]: No numbers provided for average calculation.")
         avg = sum(num) / len(num)
         return avg
     except Exception as e:
